@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background Color</title>
+  <style>
+    body {
+      text-align: center;
+      padding-top: 100px;
+      transition: background-color 0.5s ease;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+    .red { background-color: red; }
+    .green { background-color: green; }
+    .blue { background-color: blue; }
+    .yellow { background-color: goldenrod; }
+    .purple { background-color: purple; }
+  </style>
+</head>
+<body>
+
+  <h1>Click a Button to Change Screen Color</h1>
+  
+  <button class="red" onclick="changeColor('red')">Red</button>
+  <button class="green" onclick="changeColor('green')">Green</button>
+  <button class="blue" onclick="changeColor('blue')">Blue</button>
+  <button class="yellow" onclick="changeColor('goldenrod')">Yellow</button>
+  <button class="purple" onclick="changeColor('purple')">Purple</button>
+
+  <script>
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>
